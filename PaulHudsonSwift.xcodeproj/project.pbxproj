@@ -10,9 +10,33 @@
 		7E5DD9FB2FC7D46500C25B1A /* PaulHudsonSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaulHudsonSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7E61C6F02FD0E7E700C426E3 /* Exceptions for "PaulHudsonSwift" folder in "PaulHudsonSwift" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				WhyStructInViews.text,
+			);
+			target = 7E5DD9FA2FC7D46500C25B1A /* PaulHudsonSwift */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		7E61C6F12FD0E7E700C426E3 /* Exceptions for "PaulHudsonSwift" folder in "Compile Sources" phase from "PaulHudsonSwift" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 7E5DD9F72FC7D46500C25B1A /* Sources */;
+			membershipExceptions = (
+				WhyStructInViews.text,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		7E5DD9FD2FC7D46500C25B1A /* PaulHudsonSwift */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				7E61C6F02FD0E7E700C426E3 /* Exceptions for "PaulHudsonSwift" folder in "PaulHudsonSwift" target */,
+				7E61C6F12FD0E7E700C426E3 /* Exceptions for "PaulHudsonSwift" folder in "Compile Sources" phase from "PaulHudsonSwift" target */,
+			);
 			path = PaulHudsonSwift;
 			sourceTree = "<group>";
 		};

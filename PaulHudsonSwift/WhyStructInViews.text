@@ -1,0 +1,25 @@
+//
+//  WhyStructInViews.swift
+//  PaulHudsonSwift
+//
+//  Created by Pratik Solanki on 2026-06-03.
+//
+
+ Why SwiftUI uses structs for views instead of the classes used in older frameworks like UIKit and AppKit. The core reasoning centers on performance and cleaner state management.
+
+1. The Performance Factor
+
+UIKit/AppKit approach: In older frameworks, views are built as classes that inherit from a massive hierarchy. Each subclass carries the overhead of hundreds of properties and methods from its parent classes, whether they are needed or not (0:48).
+SwiftUI approach: SwiftUI views are simple, lightweight structs. They only contain exactly the data you define—such as a single integer—making them extremely fast and inexpensive to create in large quantities
+                                
+2. Isolation of State
+
+The problem with classes: Classes can change their values internally, even if the object is declared as a constant. This can lead to unpredictable code and makes it difficult for a framework to track when updates are necessary
+                                
+Functional design: By using structs, SwiftUI encourages a functional approach where views are inert, immutable structures. They act as simple blueprints that convert data into UI rather than complex objects that might mutate unexpectedly
+
+3. Simplicity and Maintainability
+
+Example: Color.red is cited as the ultimate example of a view that holds essentially no data, doing only exactly what is requested
+
+Conclusion: Structs allow developers to reason about their code more easily because they contain exactly what the developer puts in them. Paul Hudson emphasizes that using classes for SwiftUI views is not just discouraged, but likely to cause compilation errors or runtime crashes

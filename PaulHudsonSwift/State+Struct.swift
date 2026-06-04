@@ -19,9 +19,30 @@ struct State_Struct: View {
     }
 }
 
+
+struct TextColor: View {
+    var body: some View{
+        VStack{
+            Text("Hey Pratik")
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(.red)
+            
+            Text("Hello")
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+        }
+    }
+}
+
+
+#Preview{
+    TextColor()
+}
+
 #Preview {
     State_Struct()
 }
+
+
 
 
 //In SwiftUI, @State is a fundamental property wrapper that allows you to manage local data that changes over time, effectively enabling the "views as a function of their state" paradigm (0:04 - 0:56).
